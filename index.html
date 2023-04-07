@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+
+  <form id="regForm" onsubmit=" ">
+    <div class="tab">
+      <div id="heading">Diabeto Predict
+        <button id="test">Test</button>
+        <button id="home">Home</button>
+        <picture style="display: inline;">
+          <source media="(min-width: 650px)" srcset="img1.jpg">
+          <source media="(min-width: 465px)" srcset="img1.jpg">
+          <img src="img1.jpg" style="width: auto; height: auto;"><br>
+        </picture>
+        <h2>Let us help you beat diabetes before it beats you.</h2>
+        <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in rutrum enim, nec ultrices
+          arcu. Proin in nisl in quam euismod convallis. Curabitur eu felis tempor, laoreet ex ac, aliquet erat.
+          Maecenas egey ligula id tellus interdum lobortis. Curabitur dapibus eu massa id congue. Duis accumsan massa et
+          dictum.</p>
+
+      </div>
+    </div>
+    <div class="tab">
+      <h2 class="mainTab">Do you know your triceps skin fold thickness measurement? If not, you can estiate it by
+        answeing the following question:</h2>
+      <h3>When you touch your upper arm,does it feel:<br></h3>
+      <div class="link">
+        <picture style="display: inline;">
+          <source media="(min-width: 650px)" srcset="img2.jpg">
+          <source media="(min-width: 465px)" srcset="img2.jpg">
+          <img src="img2.jpg"><br>
+        </picture>
+
+        <a id="desc" onclick="description(0)"><u>description</u></a>
+      </div>
+
+
+      <div class="element">
+
+        <p><input type="radio" onchange="this.className = ''" name="1" value="20-30">Soft and spongy(like you can easily
+          pinch a lot
+          of flesh)<br></p>
+        <p><input type="radio" onchange="this.className = ''" name="1" value="15-20"> Moderately soft and spongy(like
+          you can pinch a
+          little bit of flesh)<br></p>
+        <p><input type="radio" onchange="this.className = ''" name="1" value="10-15"> Moderately hard and dense(like you
+          can't pinch
+          much flesh)<br></p>
+        <p><input type="radio" onchange="this.className = ''" name="1" value="0-10">Hard and dense (like you can't pinch
+          any
+          flesh)<br></p> <br>
+          <a href="#pressure">
+            <button onclick="tricepThickness();" id="nextBtn">Next</button>
+          </a>
+        
+
+
+      </div>
+
+      <div class="description" style="display: none;">To estimate your triceps skin fold thickness using method,
+        lightly pinch the skin on the back of your upper arm, between your shoulder and elbow, with your thumb and
+        fingers. Then, based on the description of the texture in each option, choose the one that mos closely matches
+        the fee of your skin.
+        <br> *Please note that this estimation method is not as accurate as using calipers, and that a healthcare
+        professional can provide a more precise measurement*<br><br>
+        <button style="float: right;" onclick="back(0,event)">Back </button>
+      </div>
+
+    </div>
+
+    <div class="tab" id="pressure">
+      <h2>Have you ever taken medication regularly to manage high blood pressure:<br></h2>
+      <div class="link">
+        <picture style="display: inline;">
+          <source media="(min-width: 650px)" srcset="img3.jpg">
+          <source media="(min-width: 465px)" srcset="img3.jpg">
+          <img src="img3.jpg"><br>
+        </picture>
+
+        <a id="desc" onclick="description(1)"><u>description</u></a>
+      </div>
+
+      <div class="element">
+        <p><input type="radio" onchange="this.className = ''" name="2">Yes, I currently take medication for high blood
+          pressure<br></p>
+        <p><input type="radio" onchange="this.className = ''" name="2"> No, I have never taken medication for high or
+          low bloat pressure.<br></p><br>
+
+      </div>
+      <div class="description" style="display: none;">To estimate your triceps skin fold thickness using this method,
+        lightly pinch the skin on the back of your upper arm, between your shoulder and elbow, with your thumb and
+        fingers. Then, based on the description of the texture in each option, choose the one that mos closely matches
+        the fee of your skin.
+        <br> *Please note that this estimation method is not as accurate as using calipers, and that a healthcare
+        professional can provide a more precise measurement*<br><br>
+        <button style="float: right;" onclick="back(1,event)">Back </button>
+      </div>
+    </div>
+
+    <div class="tab">
+      <h2 class="mainTab">Do you know your current plasma glucose concentration level in mg/dL? If not, you can estimate
+        it by answering the following question: </h2>
+      <h3>when was the last time you ate or drank something other than water?<br></h3>
+      <div class="link">
+        <picture style="display: inline;">
+          <source media="(min-width: 650px)" srcset="img4.jpg">
+          <source media="(min-width: 465px)" srcset="img4.jpg">
+          <img src="img4.jpg"><br>
+        </picture>
+        <a id="desc" onclick="description(2)"><u>description</u></a>
+      </div>
+
+      <div class="element">
+        <p><input type="radio" onchange="this.className = ''" name="3">Within the past hour<br></p>
+        <p><input type="radio" onchange="this.className = ''" name="3"> Within the past 2-3 hours<br></p>
+        <p><input type="radio" onchange="this.className = ''" name="3"> Within the past 4-6 hours<br></p>
+        <p><input type="radio" onchange="this.className = ''" name="3"> Within the past 7-12 hours<br></p><br>
+      </div>
+      <div class="description" style="display: none;">*Plasma glucose concentration is a measure of the amout of sugar
+        in your blood. It is an important indicator of your overall health and can be used to diagnose and monitor
+        conditions such as diabetes. If you are unsure of your exact plasma glucose concentration, we can use your
+        answers to provide an estimate. This will help us better predict.<br>
+        <button style="float: right;" onclick="back(2,event)">Back </button>
+      </div>
+    </div>
+
+
+    <div class="tab">
+      <h2>Do you experience any of the following symptoms after consuming a meal?<br></h2>
+      <div class="link">
+        <picture style="display: inline;">
+          <source media="(min-width: 650px)" srcset="img5.jpg">
+          <source media="(min-width: 465px)" srcset="img5.jpg">
+          <img src="img5.jpg"><br>
+        </picture>
+
+        <a id="desc" onclick="description(3)"><u>description</u></a>
+      </div>
+
+      <div class="element">
+
+        <p><input type="radio" onchange="this.className = ''" name="4" required>No symptoms<br></p>
+        <p><input type="radio" onchange="this.className = ''" name="4">Mild symptoms (slight shakiness, Increased head
+          rate, or mild sweating) <br></p>
+        <p><input type="radio" onchange="this.className = ''" name="4">Moderate symptoms (signIticant shakiness,
+          Increased heart rate, sweating, or mild confusion) <br></p>
+        <p><input type="radio" onchange="this.className = ''" name="4">Severe symptoms ( extreme shakiness,increased
+          heart rate, sweating,confusion,or loss of consciousness)<br></p><br>
+      </div>
+      <div class="description" style="display: none;">This question is about your 2-hour serum insulin level. By asking
+        about your insulin level, we can estimate your body's ability to process glucose. your response will help us to
+        estimate your insulin level.<br>
+        <button style="float: right;" onclick="back(3,event)">Back </button>
+      </div>
+    </div>
+
+    <div class="tab">
+      <h2> anyone in your immediate family or other relatives been diagnosed with diabetes? <br></h2>
+      <div class="link">
+        <picture style="display: inline;">
+          <source media="(min-width: 650px)" srcset="img6.jpg">
+          <source media="(min-width: 465px)" srcset="img6.jpg">
+          <img src="img6.jpg"><br>
+        </picture>
+        <a id="desc" onclick="description(4)"><u>description</u></a>
+      </div>
+
+      <div class="element">
+        <p><input type="radio" onchange="this.className = ''" name="5">No<br></p>
+        <p><input type="radio" onchange="this.className = ''" name="5"> yes:grandparenst uncle aunt first cousin<br></p>
+        <p><input type="radio" onchange="this.className = ''" name="5"> yes:brother sister own child parent<br> </p><br>
+      </div>
+      <div class="description" style="display: none;">To estimate your triceps skin fold thickness using this method,
+        lightly pinch the skin on the back of your upper arm, between your shoulder and elbow, with your thumb and
+        fingers. Then, based on the description of the texture in each option, choose the one that mos closely matches
+        the fee of your skin.
+        <br> *Please note that this estimation method is not as accurate as using calipers, and that a healthcare
+        professional can provide a more precise measurement*<br>
+        <button style="float: right;" onclick="back(4,event)">Back </button>
+      </div>
+    </div>
+
+    <div class="tab">
+      <h2> Please select your age from between the given ranges <br></h2>
+      <div class="link">
+        <picture style="display: inline;">
+          <source media="(min-width: 650px)" srcset="img7.jpg">
+          <source media="(min-width: 465px)" srcset="img7.jpg">
+          <img src="img7.jpg"><br>
+        </picture>
+        <a id="desc" onclick="description(5)"><u>description</u></a>
+      </div>
+
+      <div class="element">
+
+        <p><input placeholder="Enter here...." oninput="this.className = ''"><br></p>
+
+        <!-- <p><input type="radio" onchange="this.className = ''" name="6"> Under 45 years<br></p>
+        <p><input type="radio" onchange="this.className = ''" name="6"> 45-54 years<br></p>
+        <p><input type="radio" onchange="this.className = ''" name="6"> 55-64 years<br></p>
+        <p><input type="radio" onchange="this.className = ''" name="6"> Over 64 years<br></p> <br> -->
+      </div>
+      <div class="description" style="display: none;">To estimate your triceps skin fold thickness using this method,
+        lightly pinch the skin on the back of your upper arm, between your shoulder and elbow, with your thumb and
+        fingers. Then, based on the description of the texture in each option, choose the one that mos closely matches
+        the fee of your skin.
+        <br> *Please note that this estimation method is not as accurate as using calipers, and that a healthcare
+        professional can provide a more precise measurement*<br>
+        <button style="float: right;" onclick="back(5,event)">Back </button>
+      </div>
+    </div>
+
+    <div class="tab">
+      <h2> BMI <br></h2>
+      <div class="link">
+        <picture style="display: inline;">
+          <source media="(min-width: 650px)" srcset="img8.jpg">
+          <source media="(min-width: 465px)" srcset="img8.jpg">
+          <img src="img8.jpg"><br>
+        </picture>
+        <a id="desc" onclick="description(6)"><u>description</u></a>
+      </div>
+
+      <div class="element">
+        <p><input placeholder="Enter here...." oninput="this.className = ''"><br></p>
+        <!--     
+    <p><input type="radio"onchange="this.className = ''" name="7">No<br></p>
+    <p><input type="radio" onchange="this.className = ''" name="7"> yes:grandparenst uncle aunt first cousin<br></p>
+    <p><input type="radio" onchange="this.className = ''" name="7"> yes:brother sister own child parent<br> </p><br>    -->
+      </div>
+      <div class="description" style="display: none;">To estimate your triceps skin fold thickness using this method,
+        lightly pinch the skin on the back of your upper arm, between your shoulder and elbow, with your thumb and
+        fingers. Then, based on the description of the texture in each option, choose the one that mos closely matches
+        the fee of your skin.
+        <br> *Please note that this estimation method is not as accurate as using calipers, and that a healthcare
+        professional can provide a more precise measurement*<br>
+        <button style="float: right;" onclick="back(6,event)">Back </button>
+      </div>
+    </div>
+
+    <div class="tab">
+      <h2> How many times you have been pregnant <br></h2>
+      <div class="link">
+        <picture style="display: inline;">
+          <source media="(min-width: 650px)" srcset="img9.jpg">
+          <source media="(min-width: 465px)" srcset="img9.jpg">
+          <img src="img9.jpg"><br>
+        </picture>
+        <a id="desc" onclick="description(7)"><u>description</u></a>
+      </div>
+
+      <div class="element">
+        <p><input placeholder="Enter here...." oninput="this.className = ''"><br></p>
+      </div>
+      <div class="description" style="display: none;">To estimate your triceps skin fold thickness using this method,
+        lightly pinch the skin on the back of your upper arm, between your shoulder and elbow, with your thumb and
+        fingers. Then, based on the description of the texture in each option, choose the one that mos closely matches
+        the fee of your skin.
+        <br> *Please note that this estimation method is not as accurate as using calipers, and that a healthcare
+        professional can provide a more precise measurement*<br>
+        <button style="float: right;" onclick="back(7,event)">Back </button>
+      </div>
+    </div>
+    <div style="overflow:auto;">
+      <div style="float:left;">
+        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:40px;">
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
