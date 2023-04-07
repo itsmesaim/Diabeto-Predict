@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,500,600|DM+Sans:700");
+
+body {
+  background-color: rgb(189, 237, 242);
+  font-family: Poppins;
+}
+
+h2 {
+  color: black
+}
+
+#desc {
+  color: blue;
+  padding-top: 50px
+}
+
+.link {
+
+  float: right
+}
+
+.element {
+  float: middle;
+  padding: 10px;
+  width: 700px;
+  height: 250px;
+
+  padding-bottom: 100px;
+}
+
+img {
+  float: right;
+  width: 400px;
+  height: 400px;
+  vertical-align: middle;
+  display: inline-block;
+
+}
+
+#paragraph {
+  border: 0px;
+  background-color: rgb(189, 237, 242);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: normal;
+}
+
+p {
+
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: teal;
+  border: 1px solid black;
+  color: white;
+}
+
+#heading {
+  color: teal;
+  font-weight: bold;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+#home,
+#test {
+  float: right;
+  background-color: rgb(189, 237, 242);
+  color: teal;
+  font-size: large;
+  font-weight: bold;
+}
+
+
+
+
+
+#start {
+  background-color: teal;
+  text-align: center;
+  width: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#regForm {
+  background-color: rgb(189, 237, 242);
+
+  font-family: Raleway;
+
+  padding: 100px;
+
+}
+
+input {
+  padding: 10px;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+
+}
+
+input.invalid {
+  background-color: #ffdddd;
+}
+
+.description {
+
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: content-box;
+  padding: 50px;
+
+}
+
+.tab {
+  box-sizing: border-box;
+  font-size: medium;
+  color: black;
+  font-weight: normal;
+  background-color: rgb(189, 237, 242);
+  display: none;
+}
+
+button {
+  background-color: teal;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  color: teal;
+  background-color: #bbbbbb;
+
+}
+
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+
+.step.finish {
+  background-color: teal;
+}
